@@ -137,16 +137,16 @@ public class BoletoTest {
 	}
 
 	@Test(expected = IllegalArgumentException.class)
-	public void boletoNaoDeveAceitarMaisDeCincoInstrucoes() {
+	public void boletoNaoDeveAceitarMaisDeQuatorzeInstrucoesFichaCompensacao() {
 		Boleto b = Boleto.novoBoleto();
-		b.comInstrucoes("", "", "", "", "", "");
+		b.comInstrucoesFichaCompensacao("", "", "", "", "", "", "", "", "", "", "", "", "", "", "");
 	}
 
 	@Test
-	public void boletoDeveAceitarNoMaximoCincoInstrucoes() {
+	public void boletoDeveAceitarNoMaximoQuatorzeInstrucoesFichaCompensacao() {
 		Boleto b = Boleto.novoBoleto();
-		b.comInstrucoes("", "", "", "", "");
-		assertEquals(5, b.getInstrucoes().size());
+		b.comInstrucoesFichaCompensacao("", "", "", "", "", "", "", "", "", "", "", "");
+		assertEquals(12, b.getInstrucoesFichaCompensacao().size());
 	}
 
 	@Test(expected = IllegalArgumentException.class)
@@ -188,13 +188,8 @@ public class BoletoTest {
 		assertEquals(2, b.getLocaisDePagamento().size());
 	}
 
-	@Test
-	public void valorCobradoDeveSerZeroSemAcrescimoOuDescontos() {
-		Boleto b = Boleto.novoBoleto();
-                b.comValorBoleto("40.00");
-		assertEquals(BigDecimal.ZERO, b.getValorCobrado());
-	}
-        
+
+
 	@Test
 	public void valorCobradoDeveSerMaiorComAcrescimo() {
 		Boleto b = Boleto.novoBoleto();

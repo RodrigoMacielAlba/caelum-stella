@@ -40,7 +40,7 @@ public class SantanderTest {
 	    boleto = Boleto.novoBoleto().comEspecieDocumento("DM")
     		.comBanco(banco).comDatas(datas).comBeneficiario(beneficiario)
     		.comPagador(pagador).comValorBoleto(219.50).comAceite(Boolean.FALSE)
-    		.comInstrucoes("instrucao 1", "instrucao 2", "instrucao 3", "instrucao 4")
+    		.comInstrucoesReciboPagador("instrucao 1", "instrucao 2", "instrucao 3", "instrucao 4")
     		.comLocaisDePagamento("local 1", "local 2")
     		.comNumeroDoDocumento("105613749501");
 	}

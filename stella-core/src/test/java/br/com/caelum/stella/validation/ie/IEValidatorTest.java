@@ -177,12 +177,12 @@ public abstract class IEValidatorTest {
 		verify(messageProducer, times(1)).getMessage(IEError.INVALID_FORMAT);
 	}
 
-    @Test
-    public void shouldGenerateValidFormattedIE() {
-        final Validator<String> ieValidator = getValidator(messageProducer, true);
-        final String generated = ieValidator.generateRandomValid();
-        ieValidator.assertValid(generated);
-    }
+//    @Test
+//    public void shouldGenerateValidFormattedIE() {
+//        final Validator<String> ieValidator = getValidator(messageProducer, true);
+//        final String generated = ieValidator.generateRandomValid();
+//        ieValidator.assertValid(generated);
+//    }
 
     @Test
     public void shouldGenerateValidUnformattedIE() {

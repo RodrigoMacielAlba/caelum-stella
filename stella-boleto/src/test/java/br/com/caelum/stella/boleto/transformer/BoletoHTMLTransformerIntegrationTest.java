@@ -81,7 +81,7 @@ public class BoletoHTMLTransformerIntegrationTest{
 		Banco banco = new BancoDoBrasil();
 
 		boleto = Boleto.novoBoleto().comBanco(banco).comDatas(datas).comDescricoes(descricoes).comBeneficiario(beneficiario)
-				.comPagador(pagador).comValorBoleto("40.00").comNumeroDoDocumento("4323").comInstrucoes(instrucoes)
+				.comPagador(pagador).comValorBoleto("40.00").comNumeroDoDocumento("4323").comInstrucoesReciboPagador(instrucoes)
 				.comLocaisDePagamento(locaisDePagamento);
 
 		GeradorDeBoletoHTML gerador = new GeradorDeBoletoHTML(boleto);
