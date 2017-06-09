@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-05-25T17:17:11 -->
+<!-- 2017-06-06T09:49:33 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="boleto-default" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ff653490-88f9-4546-aaa6-53f137c26ccc">
 	<property name="ireport.zoom" value="2.0"/>
 	<property name="ireport.x" value="0"/>
@@ -15,7 +15,7 @@
 	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
-	<style name="Celula" forecolor="#646464" fontName="Arial" fontSize="5" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+	<style name="Celula" forecolor="#646464" fontName="Verdana" fontSize="5" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
 		<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="2">
 			<pen lineWidth="0.5" lineColor="#000000"/>
 			<topPen lineWidth="0.5" lineColor="#000000"/>
@@ -24,7 +24,7 @@
 			<rightPen lineWidth="0.5" lineColor="#000000"/>
 		</box>
 	</style>
-	<style name="Txt_Normal" fontName="Arial" fontSize="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+	<style name="Txt_Normal" fontName="Verdana" fontSize="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
 		<box topPadding="2" leftPadding="10" bottomPadding="2" rightPadding="2">
 			<pen lineWidth="0.5"/>
 			<topPen lineWidth="0.0"/>
@@ -205,6 +205,9 @@
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
+				<textElement>
+					<font size="4"/>
+				</textElement>
 				<text><![CDATA[Nr. do Documento]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
@@ -215,7 +218,7 @@
 					<rightPen lineWidth="0.0"/>
 				</box>
 				<textElement textAlignment="Right" markup="none">
-					<font size="13"/>
+					<font size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{linhaDigitavel}]]></textFieldExpression>
 			</textField>
@@ -227,6 +230,9 @@
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
+				<textElement>
+					<font size="4"/>
+				</textElement>
 				<text><![CDATA[Beneficiário/CNPJ]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
@@ -256,6 +262,9 @@
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
+				<textElement>
+					<font size="4"/>
+				</textElement>
 				<text><![CDATA[Espécie Doc.]]></text>
 			</staticText>
 			<staticText>
@@ -264,6 +273,9 @@
 					<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#BAB3B3"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
+				<textElement>
+					<font size="4"/>
+				</textElement>
 				<text><![CDATA[Carteira]]></text>
 			</staticText>
 			<staticText>
@@ -272,6 +284,9 @@
 					<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#BAB3B3"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
+				<textElement>
+					<font size="4"/>
+				</textElement>
 				<text><![CDATA[(-) Desconto / Abatimento]]></text>
 			</staticText>
 			<staticText>
@@ -280,6 +295,9 @@
 					<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#BAB3B3"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
+				<textElement>
+					<font size="4"/>
+				</textElement>
 				<text><![CDATA[Valor Moeda]]></text>
 			</staticText>
 			<staticText>
@@ -290,6 +308,9 @@
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
+				<textElement>
+					<font size="4"/>
+				</textElement>
 				<text><![CDATA[Nosso Número]]></text>
 			</staticText>
 			<staticText>
@@ -300,6 +321,9 @@
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
+				<textElement>
+					<font size="4"/>
+				</textElement>
 				<text><![CDATA[Local de Pagamento]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
@@ -332,6 +356,9 @@
 					<bottomPen lineWidth="0.0" lineStyle="Dotted"/>
 					<rightPen lineWidth="0.0" lineStyle="Dotted"/>
 				</box>
+				<textElement>
+					<font size="4"/>
+				</textElement>
 				<text><![CDATA[Agência / Código do Beneficiário]]></text>
 			</staticText>
 			<staticText>
@@ -340,6 +367,9 @@
 					<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#BAB3B3"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
+				<textElement>
+					<font size="4"/>
+				</textElement>
 				<text><![CDATA[Espécie Moeda]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
@@ -367,6 +397,9 @@
 					<bottomPen lineWidth="0.75"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
+				<textElement>
+					<font size="10"/>
+				</textElement>
 				<textFieldExpression><![CDATA[$F{numeroFormatadoComDigito}]]></textFieldExpression>
 			</textField>
 			<staticText>
@@ -377,6 +410,9 @@
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
+				<textElement>
+					<font size="4"/>
+				</textElement>
 				<text><![CDATA[(+) Mora / Multa]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
@@ -413,6 +449,9 @@
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
+				<textElement>
+					<font size="4"/>
+				</textElement>
 				<text><![CDATA[Data do Documento]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
@@ -433,6 +472,9 @@
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
+				<textElement>
+					<font size="4"/>
+				</textElement>
 				<text><![CDATA[Data de Processamento]]></text>
 			</staticText>
 			<staticText>
@@ -441,6 +483,9 @@
 					<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#BAB3B3"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
+				<textElement>
+					<font size="4"/>
+				</textElement>
 				<text><![CDATA[Quantidade Moeda]]></text>
 			</staticText>
 			<componentElement>
@@ -485,6 +530,9 @@
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
+				<textElement>
+					<font size="4"/>
+				</textElement>
 				<text><![CDATA[Aceite]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
@@ -556,6 +604,9 @@
 					<bottomPen lineWidth="0.75"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
+				<textElement>
+					<font size="10"/>
+				</textElement>
 				<textFieldExpression><![CDATA[$F{numeroFormatadoComDigito}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
@@ -566,7 +617,7 @@
 					<rightPen lineWidth="0.0"/>
 				</box>
 				<textElement textAlignment="Right" markup="none">
-					<font size="13"/>
+					<font size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{linhaDigitavel}]]></textFieldExpression>
 			</textField>
@@ -587,6 +638,9 @@
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
+				<textElement>
+					<font size="4"/>
+				</textElement>
 				<text><![CDATA[Data de Vencimento]]></text>
 			</staticText>
 			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
@@ -605,6 +659,9 @@
 					<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#BAB3B3"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
+				<textElement>
+					<font size="4"/>
+				</textElement>
 				<text><![CDATA[(=) Valor do Documento]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
@@ -637,6 +694,9 @@
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
+				<textElement>
+					<font size="4"/>
+				</textElement>
 				<text><![CDATA[(=) Valor Cobrado]]></text>
 			</staticText>
 			<staticText>
@@ -655,6 +715,9 @@
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
+				<textElement>
+					<font size="4"/>
+				</textElement>
 				<text><![CDATA[Pagador/CPF/Endereço]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
@@ -674,7 +737,9 @@
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
-				<textElement verticalAlignment="Middle"/>
+				<textElement verticalAlignment="Middle">
+					<font size="4"/>
+				</textElement>
 				<text><![CDATA[Pagador/Avalista: ]]></text>
 			</staticText>
 			<staticText>
@@ -685,7 +750,9 @@
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
-				<textElement verticalAlignment="Middle"/>
+				<textElement verticalAlignment="Middle">
+					<font size="4"/>
+				</textElement>
 				<text><![CDATA[Autenticação Mecância]]></text>
 			</staticText>
 			<staticText>
@@ -742,7 +809,7 @@
 			<staticText>
 				<reportElement x="0" y="0" width="555" height="7" uuid="2e9dbb3c-5b8d-4728-a8a3-89018c8bc8a3"/>
 				<textElement textAlignment="Center">
-					<font fontName="Arial" size="6"/>
+					<font fontName="Verdana" size="5"/>
 				</textElement>
 				<text><![CDATA[Instruções de Impressão]]></text>
 			</staticText>
@@ -751,28 +818,28 @@
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<textElement>
-					<font fontName="Arial" size="6"/>
+					<font fontName="Verdana" size="5"/>
 				</textElement>
 				<text><![CDATA[•  Improma em impressora jato de tinta (ink jet) ou laser em qualidade ou alta (não use modo econômico).]]></text>
 			</staticText>
 			<staticText>
 				<reportElement stretchType="RelativeToTallestObject" x="0" y="14" width="555" height="7" uuid="c3f7c1ed-260f-4334-b852-08b393779dde"/>
 				<textElement>
-					<font fontName="Arial" size="6"/>
+					<font fontName="Verdana" size="5"/>
 				</textElement>
 				<text><![CDATA[•  Utilize folha A4 (210 x 297 mm) e margens mínimas à esquerda e à direita do formulário ]]></text>
 			</staticText>
 			<staticText>
 				<reportElement stretchType="RelativeToTallestObject" x="0" y="21" width="555" height="7" uuid="e8b870ec-5a20-477e-9c6f-c5865bc3e0b4"/>
 				<textElement>
-					<font fontName="Arial" size="6"/>
+					<font fontName="Verdana" size="5"/>
 				</textElement>
 				<text><![CDATA[•  Corte na linha indicada. Não rasure, risque, fure ou dobre a região onde se encontra o código de barras.]]></text>
 			</staticText>
 			<staticText>
 				<reportElement stretchType="RelativeToTallestObject" x="0" y="30" width="555" height="7" uuid="09ce1496-ead6-4efe-9837-1e02953f979b"/>
 				<textElement>
-					<font fontName="Arial" size="6"/>
+					<font fontName="Verdana" size="5"/>
 				</textElement>
 				<text><![CDATA[•  Caso tenha problemas ao imprimir, copie a seqüencia numérica abaixo e pague no caixa eletrônico ou internet banking.]]></text>
 			</staticText>
@@ -782,7 +849,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<textElement>
-					<font fontName="Arial" size="7"/>
+					<font fontName="Verdana" size="7"/>
 				</textElement>
 				<text><![CDATA[Linha Digitável:]]></text>
 			</staticText>
@@ -805,7 +872,7 @@
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<textElement>
-					<font fontName="Arial" size="7"/>
+					<font fontName="Verdana" size="7"/>
 				</textElement>
 				<text><![CDATA[Valor:]]></text>
 			</staticText>
@@ -857,6 +924,9 @@
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
+				<textElement>
+					<font size="4"/>
+				</textElement>
 				<text><![CDATA[Nr. do Documento]]></text>
 			</staticText>
 			<staticText>
@@ -867,6 +937,9 @@
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
+				<textElement>
+					<font size="4"/>
+				</textElement>
 				<text><![CDATA[Beneficiário/CPF/CNPJ]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
@@ -896,6 +969,9 @@
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
+				<textElement>
+					<font size="4"/>
+				</textElement>
 				<text><![CDATA[Espécie Doc.]]></text>
 			</staticText>
 			<staticText>
@@ -904,6 +980,9 @@
 					<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#BAB3B3"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
+				<textElement>
+					<font size="4"/>
+				</textElement>
 				<text><![CDATA[Carteira]]></text>
 			</staticText>
 			<staticText>
@@ -912,6 +991,9 @@
 					<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#BAB3B3"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
+				<textElement>
+					<font size="4"/>
+				</textElement>
 				<text><![CDATA[(-) Desconto / Abatimento]]></text>
 			</staticText>
 			<staticText>
@@ -920,6 +1002,9 @@
 					<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#BAB3B3"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
+				<textElement>
+					<font size="4"/>
+				</textElement>
 				<text><![CDATA[Valor Moeda]]></text>
 			</staticText>
 			<staticText>
@@ -930,6 +1015,9 @@
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
+				<textElement>
+					<font size="4"/>
+				</textElement>
 				<text><![CDATA[Nosso Número]]></text>
 			</staticText>
 			<staticText>
@@ -940,6 +1028,9 @@
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
+				<textElement>
+					<font size="4"/>
+				</textElement>
 				<text><![CDATA[Local de Pagamento]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
@@ -972,6 +1063,9 @@
 					<bottomPen lineWidth="0.0" lineStyle="Dotted"/>
 					<rightPen lineWidth="0.0" lineStyle="Dotted"/>
 				</box>
+				<textElement>
+					<font size="4"/>
+				</textElement>
 				<text><![CDATA[Agência / Código do Beneficiário]]></text>
 			</staticText>
 			<staticText>
@@ -980,6 +1074,9 @@
 					<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#BAB3B3"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
+				<textElement>
+					<font size="4"/>
+				</textElement>
 				<text><![CDATA[Espécie Moeda]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
@@ -999,6 +1096,9 @@
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
+				<textElement>
+					<font size="4"/>
+				</textElement>
 				<text><![CDATA[(+) Mora / Multa]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
@@ -1026,6 +1126,9 @@
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
+				<textElement>
+					<font size="4"/>
+				</textElement>
 				<text><![CDATA[Data do Documento]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
@@ -1046,6 +1149,9 @@
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
+				<textElement>
+					<font size="4"/>
+				</textElement>
 				<text><![CDATA[Data de Processamento]]></text>
 			</staticText>
 			<staticText>
@@ -1054,6 +1160,9 @@
 					<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#BAB3B3"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
+				<textElement>
+					<font size="4"/>
+				</textElement>
 				<text><![CDATA[Quantidade Moeda]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
@@ -1083,6 +1192,9 @@
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
+				<textElement>
+					<font size="4"/>
+				</textElement>
 				<text><![CDATA[Aceite]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
@@ -1132,6 +1244,9 @@
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
+				<textElement>
+					<font size="4"/>
+				</textElement>
 				<text><![CDATA[Data de Vencimento]]></text>
 			</staticText>
 			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
@@ -1142,6 +1257,9 @@
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
+				<textElement>
+					<font fontName="Verdana"/>
+				</textElement>
 				<textFieldExpression><![CDATA[$F{vencimento}.getTime()]]></textFieldExpression>
 			</textField>
 			<staticText>
@@ -1150,6 +1268,9 @@
 					<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#BAB3B3"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
+				<textElement>
+					<font size="4"/>
+				</textElement>
 				<text><![CDATA[(=) Valor do Documento]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
@@ -1182,6 +1303,9 @@
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
+				<textElement>
+					<font size="4"/>
+				</textElement>
 				<text><![CDATA[(=) Valor Cobrado]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
@@ -1212,6 +1336,9 @@
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
+				<textElement>
+					<font size="4"/>
+				</textElement>
 				<text><![CDATA[Pagador/CPF/Endereço]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
@@ -1231,7 +1358,9 @@
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
-				<textElement verticalAlignment="Middle"/>
+				<textElement verticalAlignment="Middle">
+					<font size="4"/>
+				</textElement>
 				<text><![CDATA[Autenticação Mecância]]></text>
 			</staticText>
 			<componentElement>
