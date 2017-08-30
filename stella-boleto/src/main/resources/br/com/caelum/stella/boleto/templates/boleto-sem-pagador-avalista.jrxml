@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-06-06T09:49:33 -->
+<!-- 2017-08-30T15:12:59 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="boleto-default" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ff653490-88f9-4546-aaa6-53f137c26ccc">
 	<property name="ireport.zoom" value="2.0"/>
 	<property name="ireport.x" value="0"/>
@@ -388,7 +388,7 @@
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
-				<textFieldExpression><![CDATA[$F{logradouroPagador} + ", " + ($F{bairroPagador} == null ? "" : $F{bairroPagador} )]]></textFieldExpression>
+				<textFieldExpression><![CDATA[($F{logradouroPagador} == null ? "": $F{logradouroPagador}) + ", " + ($F{bairroPagador} == null ? "" : $F{bairroPagador} )]]></textFieldExpression>
 			</textField>
 			<textField pattern="" isBlankWhenNull="true">
 				<reportElement style="Txt_Negrito" x="105" y="380" width="52" height="23" uuid="9e86528e-67c1-44fc-9395-bb9eecf9905c"/>
@@ -867,7 +867,7 @@
 				<textFieldExpression><![CDATA[$F{linhaDigitavel}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement stretchType="RelativeToTallestObject" x="2" y="55" width="22" height="9" uuid="26ba1c9d-ccab-4084-bdeb-2f2ae2b01566">
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="55" width="22" height="9" uuid="26ba1c9d-ccab-4084-bdeb-2f2ae2b01566">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
@@ -877,7 +877,7 @@
 				<text><![CDATA[Valor:]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement style="Txt_valor" stretchType="RelativeToTallestObject" x="24" y="53" width="162" height="13" uuid="53142c4e-030e-4404-80cb-8a5166625ac9"/>
+				<reportElement style="Txt_valor" stretchType="RelativeToTallestObject" x="22" y="53" width="162" height="13" uuid="53142c4e-030e-4404-80cb-8a5166625ac9"/>
 				<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="2">
 					<topPen lineWidth="0.0"/>
 					<leftPen lineWidth="0.0"/>
@@ -1315,7 +1315,7 @@
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
-				<textFieldExpression><![CDATA[$F{logradouroPagador} + ", " + ($F{bairroPagador} == null ? "" : $F{bairroPagador} )]]></textFieldExpression>
+				<textFieldExpression><![CDATA[($F{logradouroPagador} == null? "": $F{logradouroPagador}) + ", " + ($F{bairroPagador} == null ? "" : $F{bairroPagador} )]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement style="Txt_Normal" x="1" y="320" width="552" height="14" uuid="ea8de1de-aad2-4eb9-9c8f-fb5ec2f885f5"/>
@@ -1326,7 +1326,7 @@
 					<bottomPen lineWidth="0.5"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
-				<textFieldExpression><![CDATA["CEP: " + ($F{cepPagador} == null ? "" : $F{cepPagador}) + ($F{cidadePagador} == null ? "" : $F{cidadePagador} + "-") + ($F{ufPagador} == null ? "" : $F{ufPagador})]]></textFieldExpression>
+				<textFieldExpression><![CDATA["CEP: " + ($F{cepPagador} == null ? "" : $F{cepPagador}) + ($F{cidadePagador} == null ? "" : " "+$F{cidadePagador} + "-") + ($F{ufPagador} == null ? "" : $F{ufPagador})]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement style="Celula" x="1" y="279" width="552" height="10" uuid="487f28e5-4665-441a-b373-9fd14c2999d0"/>
