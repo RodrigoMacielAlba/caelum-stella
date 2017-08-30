@@ -114,6 +114,17 @@ public class BancoDoBrasil extends AbstractBanco implements Banco {
     }
 
     @Override
+    public String getCarteira(Beneficiario beneficiario) {
+        StringBuilder carteira = new StringBuilder();
+        carteira.append(leftPadWithZeros(beneficiario.getCarteira(), 2));
+        if(beneficiario.getVariacaoCarteira() != null && !beneficiario.getVariacaoCarteira().isEmpty()){
+            carteira.append("/");
+            carteira.append(beneficiario.getVariacaoCarteira());
+        }
+        return carteira.toString();
+    }
+
+    @Override
     public String getNossoNumeroFormatado(Beneficiario beneficiario) {
         return beneficiario.getNossoNumero();
     }

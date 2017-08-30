@@ -62,6 +62,11 @@ public class HSBC extends AbstractBanco implements Banco {
 	}
 
 	@Override
+	public String getCarteira(Beneficiario beneficiario) {
+		return this.getCarteiraFormatado(beneficiario);
+	}
+
+	@Override
 	public URL getImage() {
 		String arquivo = "/br/com/caelum/stella/boleto/img/%s.png";
 		String imagem = String.format(arquivo, getNumeroFormatado());

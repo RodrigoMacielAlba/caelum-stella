@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 import static br.com.caelum.stella.boleto.utils.StellaStringUtils.leftPadWithZeros;
 
-public class Beneficiario implements Serializable {
+public class  Beneficiario implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
@@ -15,6 +15,7 @@ public class Beneficiario implements Serializable {
 	private String digitoCodigoBeneficiario;
 
 	private String carteira;
+	private String variacaoCarteira;
 	private String nossoNumero;
 	private String digitoNossoNumero;
 	
@@ -78,6 +79,15 @@ public class Beneficiario implements Serializable {
 
 	public Beneficiario comCarteira(String carteira) {
 		this.carteira = carteira;
+		return this;
+	}
+
+	public String getVariacaoCarteira() {
+		return variacaoCarteira;
+	}
+
+	public Beneficiario comVariacaoCarteira(String variacaoCarteira) {
+		this.variacaoCarteira = variacaoCarteira;
 		return this;
 	}
 

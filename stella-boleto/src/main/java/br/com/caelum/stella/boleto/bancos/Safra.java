@@ -61,6 +61,11 @@ public class Safra extends AbstractBanco implements Banco {
 	}
 
 	@Override
+	public String getCarteira(Beneficiario beneficiario) {
+		return this.getCarteiraFormatado(beneficiario);
+	}
+
+	@Override
 	public String getNossoNumeroFormatado(Beneficiario beneficiario) {
 		StringBuilder builder = new StringBuilder();
 		builder.append(leftPadWithZeros(beneficiario.getNossoNumero(),9));

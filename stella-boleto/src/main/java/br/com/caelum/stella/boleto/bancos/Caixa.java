@@ -65,6 +65,11 @@ public class Caixa extends AbstractBanco implements Banco {
 	}
 
 	@Override
+	public String getCarteira(Beneficiario beneficiario) {
+		return this.getCarteiraFormatado(beneficiario);
+	}
+
+	@Override
 	public String getCodigoBeneficiarioFormatado(Beneficiario beneficiario) {
 		return leftPadWithZeros(beneficiario.getCodigoBeneficiario(), 5);
 	}

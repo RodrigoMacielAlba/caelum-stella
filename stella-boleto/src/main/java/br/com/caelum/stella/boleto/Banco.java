@@ -56,6 +56,8 @@ public interface Banco extends Serializable {
 
 	String getCarteiraFormatado(Beneficiario beneficiario);
 
+	String getCarteira(Beneficiario beneficiario);
+
 	String getNossoNumeroFormatado(Beneficiario beneficiario);
 
 	String getAgenciaECodigoBeneficiario(Beneficiario beneficiario);

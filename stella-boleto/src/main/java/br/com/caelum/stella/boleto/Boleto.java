@@ -548,8 +548,10 @@ public class Boleto implements Serializable {
      * @return carteira
      */
     public String getCarteira() {
-        return banco.getCarteiraFormatado(beneficiario);
+        return banco.getCarteira(beneficiario);
     }
+
+
 
     /**
      * Local de Pagamento

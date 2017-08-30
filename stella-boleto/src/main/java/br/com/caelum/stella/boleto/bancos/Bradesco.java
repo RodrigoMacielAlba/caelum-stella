@@ -65,6 +65,11 @@ public class Bradesco extends AbstractBanco implements Banco {
 	}
 
 	@Override
+	public String getCarteira(Beneficiario beneficiario) {
+		return this.getCarteiraFormatado(beneficiario);
+	}
+
+	@Override
 	public String getNossoNumeroFormatado(Beneficiario beneficiario) {
 		return leftPadWithZeros(beneficiario.getNossoNumero(), 11);
 	}
